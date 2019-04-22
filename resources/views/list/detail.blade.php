@@ -75,7 +75,7 @@
     function _delete(id) {
         // 순서 중요!!
         if(confirm('글을 삭제하시겠습니까?')){
-            // 1. Ajax요청을 위한 XMLHttpRequest 객체 생성
+            // 1. 비동기 요청을 위한 XMLHttpRequest 객체 생성
             var xhr = new XMLHttpRequest();
             // 2. 요청할 방식과 url 작성
             xhr.open('DELETE', '/list/'+id);
